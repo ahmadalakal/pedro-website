@@ -1,0 +1,259 @@
+/* =========================
+   PEDRO WEBSITE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #09090b;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    width: 92%;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px 0;
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #292929;
+    margin-bottom: 35px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.12);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Profile */
+
+.profile {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border: 4px solid #ff2929;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #282828, #080808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+}
+
+.avatar span {
+    font-size: 75px;
+    font-weight: bold;
+    color: #ff2929;
+    text-shadow: 0 0 20px #ff2929;
+}
+
+.profile h1 {
+    font-size: 42px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+}
+
+.username {
+    color: #888;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.bio {
+    color: #ccc;
+    line-height: 2;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+/* Support Button */
+
+.support-btn {
+    display: block;
+    width: 100%;
+    padding: 17px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #e53935, #991a8e);
+    transition: 0.3s;
+}
+
+.support-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* Platforms */
+
+.platforms h2 {
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.platform-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background: #1b1b1f;
+    border: 1px solid #333;
+    border-radius: 18px;
+
+    padding: 19px;
+    margin-bottom: 16px;
+
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.platform-card:hover {
+    border-color: #ff2929;
+    background: #252529;
+    transform: translateY(-4px);
+}
+
+/* Platform Icons */
+
+.platform-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.tiktok {
+    background: #080808;
+    border: 1px solid #444;
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #d62976,
+        #962fbf
+    );
+}
+
+.kick {
+    background: #000;
+    color: #53e600;
+    border: 2px solid #53e600;
+}
+
+/* Platform Information */
+
+.platform-info {
+    flex: 1;
+}
+
+.platform-info h3 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.platform-info p {
+    color: #999;
+    font-size: 14px;
+}
+
+.arrow {
+    color: #aaa;
+    font-size: 27px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 45px;
+    color: #666;
+    line-height: 2;
+    font-size: 12px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 94%;
+        padding-top: 20px;
+    }
+
+    .banner {
+        border-radius: 12px;
+    }
+
+    .profile h1 {
+        font-size: 34px;
+    }
+
+    .avatar {
+        width: 115px;
+        height: 115px;
+    }
+
+    .avatar span {
+        font-size: 60px;
+    }
+
+    .platform-card {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .platform-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .platform-info h3 {
+        font-size: 17px;
+    }
+
+    .platform-info p {
+        font-size: 12px;
+    }
+
+}
