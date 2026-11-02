@@ -49,18 +49,19 @@ body {
     text-align: center;
     margin-bottom: 55px;
 }
-
 .avatar {
-    width: 140px;
-    height: 140px;
-    margin: auto;
-    border: 4px solid #ff2929;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background: linear-gradient(145deg, #282828, #080808);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .avatar span {
